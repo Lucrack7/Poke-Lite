@@ -1,0 +1,22 @@
+<div class="container mb-5">
+
+    <div class="text-center">
+        <h1 class="pokemon-title display-4 fw-bold mb-6 animate__animated animate__tada">Descubre tu Pokemon</h1> 
+    </div>
+
+    <div class="row">
+        <div class="card-columns ">
+            <div class="card fadein animate__animated animate__fadeIn bg-dark" *ngFor="let pokemon of pokemones">
+            <div class="card-header text-primary-emphasis text-center"><h2> {{pokemon.name}}</h2></div>
+                <img src="./assets/images/carta_presentacion.png" class="cursor rounded mx-auto d-block" (click)="onclickPokemon(pokemon.name)">
+            </div>
+        </div>    
+    </div>
+
+    <div class="mt-5">
+        <button class="btn btn-primary float-left btn-lg btnPagina" [disabled]="btnActive"
+            (click)=" paginarPreviuos()">Previous</button>
+        <button class="btn btn-primary float-right btn-lg btnPagina" (click)=" paginarNext()">Next</button><br>
+    </div>
+
+</div>

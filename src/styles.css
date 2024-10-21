@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+html, body { height: 100%; }
+
+body{
+    /* background-color:black; */
+    margin: 0; 
+    padding: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-color: rgba(22, 9, 57, 0.777);
+    overflow-x: hidden;
+}
+
+h1,h2,h5{
+    color:rgb(243, 255, 16);
+}
+p{
+    color:rgb(109, 10, 84);
+}
+
+.cursor{
+    cursor: pointer;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

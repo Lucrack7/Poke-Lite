@@ -1,0 +1,43 @@
+.btnPagina {
+
+    width: 120px;
+
+}
+
+.fadein img {
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+.fadein img:hover {
+    opacity: 1;
+    transition: 1s ease;
+}
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 3s;
+}
+
+.pokemon-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 100px;
+    color: #FFCC00; /* Color amarillo del texto */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    text-shadow: 
+        4px 4px 0px #3763AD,   /* Sombra azul fuerte */
+        6px 6px 0px #000;      /* Sombra negra */
+}
+
+
+.pokemon-title::before {
+    content: 'Descubre tu Pokemon';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: #3763AD; /* Color azul del borde */
+    text-shadow: -2px -2px 0px #3763AD, 2px 2px 0px #3763AD;
+    transform: translate(6px, 6px);
+}
